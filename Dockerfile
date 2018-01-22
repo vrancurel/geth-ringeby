@@ -14,9 +14,6 @@ RUN \
 EXPOSE 8545
 EXPOSE 30303
 
-COPY testnet_genesis.json /root/
-RUN /geth --datadir /root/ropsten init /root/testnet_genesis.json
-
 COPY entrypoint.sh /root/
 RUN chmod +x /root/entrypoint.sh
 ENTRYPOINT ["/root/entrypoint.sh"]
