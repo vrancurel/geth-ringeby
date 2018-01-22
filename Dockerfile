@@ -14,10 +14,6 @@ RUN \
 EXPOSE 8545
 EXPOSE 30303
 
-ENV MINERTHREADS 4
-ENV ETHERBASE 0x3de98268dffa46a092f3705ba2aa51ebf000030c
-ENV EXTRADATA ASSETH
-
 COPY testnet_genesis.json /root/
 RUN /geth --datadir /root/ropsten init /root/testnet_genesis.json
 
