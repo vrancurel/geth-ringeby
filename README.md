@@ -7,4 +7,4 @@ Ropsten-miner is a docker container which let you mine ropsten testnet ethers on
     git clone https://github.com/asseth/ropsten-miner
     cd ropsten-miner
     docker build -t asseth/ropsten-miner .
-    docker run -it -v `pwd`/root/ropsten:/root/ropsten vrancurel/ropsten-miner
+    docker run -it -v `pwd`/root/rinkeby:/root/rinkeby vrancurel/ropsten-miner

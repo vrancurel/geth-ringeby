@@ -1,3 +1,3 @@
 #!/bin/sh -x
 
-/geth --rinkeby --syncmode light --cache 2048 --verbosity 4 console
+/geth --datadir=/root/rinkeby --rinkeby --syncmode light --cache 2048 --verbosity 4 console
